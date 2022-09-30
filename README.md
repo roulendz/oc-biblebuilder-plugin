@@ -18,11 +18,11 @@ Opening any Book you can also quickly switch to diffent translation
 
 For me linking works as follwos.
 I use bibles in following languages and link as follows
-- Latvian Bible [LV] - BLV - [[ Mat 1#v3 ]] - Main translation with out translation Acronym
-- New Latvian Translation [LV] - BJT - [[ BJT Mat 1#v3 ]] - Secondary translations with acronyms
-- New King James Versoon [EN] - NKJV - [[ NKJV Mat 1#v3 ]]
-- The Message Bibble [EN] - MSG - [[ MSG Mat 1#v3 ]]
-- New Russian Translation [RU] - [[ NRT Mat 1#v3 ]]
+- Latvian Bible [LV] - BLV - **[[ Mat 1#v3 ]]** - Main translation with out translation Acronym
+- New Latvian Translation [LV] - BJT - **[[ BJT Mat 1#v3 ]]** - Secondary translations with acronyms
+- New King James Versoon [EN] - NKJV - **[[ NKJV Mat 1#v3 ]]**
+- The Message Bibble [EN] - MSG - **[[ MSG Mat 1#v3 ]]**
+- New Russian Translation [RU] - **[[ NRT Mat 1#v3 ]]**
 
-You can also in settings define that you want to link Russian version like [[ Мат 1#v3 ]]
+You can also in settings define that you want to link Russian version like **[[ Мат 1#v3 ]]**
 
