@@ -1,0 +1,12 @@
+---
+Aliases: [{{ data.info.description|split(',')[0] }}, {{ data.translation }}] -> <br>
+changes to this file can be done <b>/plugins/logingrupa/biblebuilder/views/bible_book_list_short.htm</b><br>
+copy generated content array to <b>plugins/logingrupa/biblebuilder/config/config.php</b> at the bottom of file
+<br> replace 'book_name_cp' with coresponding language and add it to <b>column_names array at the top of the same file config.php </b><br>
+---
+<br>
+'book_name_cp' => [
+{% for book in data.books %}
+<br>'{{ book.short_name }}',
+{% endfor %}
+]

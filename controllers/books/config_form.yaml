@@ -1,0 +1,29 @@
+# Record name
+name: 'logingrupa.biblebuilder::lang.book.name'
+
+# Model Form Field configuration
+form: $/logingrupa/biblebuilder/models/book/fields.yaml
+
+# Model Class name
+modelClass: Logingrupa\BibleBuilder\Models\Book
+
+# Default redirect location
+defaultRedirect: logingrupa/biblebuilder/books
+
+# Create page
+create:
+    title: 'backend::lang.form.create_title'
+    redirect: logingrupa/biblebuilder/books/update/:book_number
+    redirectClose: logingrupa/biblebuilder/books
+    flashSave: 'lovata.toolbox::lang.message.create_success'
+
+# Update page
+update:
+    title: 'backend::lang.form.update_title'
+    redirect: logingrupa/biblebuilder/books
+    redirectClose: logingrupa/biblebuilder/books
+    flashSave: 'lovata.toolbox::lang.message.update_success'
+    flashDelete: 'lovata.toolbox::lang.message.delete_success'
+
+# Preview page
+preview: {  }

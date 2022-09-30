@@ -1,0 +1,12 @@
+---
+Aliases: [{{ data.info.description|split(',')[0] }}, {{ data.translation }}]
+---
+Translations: {% for links in data.translation_links %}
+[[{{ links }}]]
+{% endfor %}
+# {{ data.info.description|split(',')[0] }}
+***
+{% for book in data.books %}
+[[{{ book.long_name }}|{{data.add_acronym}}{{ attribute(book, data.translation_column) }}]] | [[{{ book.long_name }}]]
+{% endfor %}
+***

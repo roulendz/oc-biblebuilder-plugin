@@ -1,0 +1,11 @@
+1.0.0:
+    - 'Init plugin'
+1.0.1:
+    - 'Create tables.'
+    # - create_table_books.php
+1.0.2:
+    - 'Add ID Field to Verses Talbe.'
+    # - add_field_id_to_verse_table.php
+1.0.3:
+    - 'Add active Field to Books Talbe.'
+    - add_field_id_to_books_table.php

@@ -1,0 +1,20 @@
+columns:
+    book_number:
+        label: Book number
+        type: text
+        searchable: true
+        sortable: true
+    chapter:
+        label: Chapter
+        type: text
+        searchable: true
+        sortable: true
+    verse:
+        label: Verse number
+        type: text
+        searchable: true
+        sortable: true
+    text:
+        label: Text
+        type: text
+        searchable: true

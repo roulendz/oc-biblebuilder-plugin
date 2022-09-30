@@ -1,0 +1,42 @@
+plugin:
+    name: 'logingrupa.biblebuilder::lang.plugin.name'
+    description: 'logingrupa.biblebuilder::lang.plugin.description'
+    author: Logingrupa
+    icon: icon-smile-o
+    homepage: ''
+navigation:
+    biblebuilder-menu-main:
+        label: 'logingrupa.biblebuilder::lang.menu.main'
+        url: logingrupa/biblebuilder/books
+        permissions:
+            - 'biblebuilder-menu-*'
+        icon: icon-paw
+        sideMenu:
+            biblebuilder-menu-books:
+                label: 'logingrupa.biblebuilder::lang.menu.books'
+                url: logingrupa/biblebuilder/books
+                permissions:
+                    - biblebuilder-menu-books
+                icon: icon-paw
+            biblebuilder-menu-chapters:
+                label: 'logingrupa.biblebuilder::lang.menu.chapters'
+                url: logingrupa/biblebuilder/chapters
+                permissions:
+                    - biblebuilder-menu-chapters
+                icon: icon-paw
+            biblebuilder-menu-verses:
+                label: 'logingrupa.biblebuilder::lang.menu.verses'
+                url: logingrupa/biblebuilder/verses
+                permissions:
+                    - biblebuilder-menu-verses
+                icon: icon-paw
+permissions:
+    biblebuilder-menu-books:
+        label: 'logingrupa.biblebuilder::lang.permission.book'
+        tab: 'logingrupa.biblebuilder::lang.tab.permissions'
+    biblebuilder-menu-chapters:
+        label: 'logingrupa.biblebuilder::lang.permission.chapter'
+        tab: 'logingrupa.biblebuilder::lang.tab.permissions'
+    biblebuilder-menu-verses:
+        label: 'logingrupa.biblebuilder::lang.permission.verse'
+        tab: 'logingrupa.biblebuilder::lang.tab.permissions'

@@ -1,0 +1,16 @@
+fields:
+    name:
+        label: 'lovata.toolbox::lang.field.name'
+        span: auto
+        required: 1
+        type: text
+        placeholder: 'lovata.toolbox::lang.field.name'
+tabs:
+    fields:
+        code:
+            label: 'lovata.toolbox::lang.field.code'
+            span: left
+            type: text
+            placeholder: 'lovata.toolbox::lang.field.code'
+            tab: 'lovata.toolbox::lang.tab.settings'
+

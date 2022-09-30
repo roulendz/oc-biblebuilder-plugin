@@ -1,0 +1,37 @@
+---
+Aliases: [{{ data.chapter.aliases }}]
+Tags: [{{ data.chapter.tags }}]
+---
+{% for translation in data.book.translations %}
+[[{{ translation }}]]
+{% endfor %}
+##### [[{{ data.book.name }}]]
+# {{ data.chapter.long_name }}
+
+{% if data.chapter.current_chapter == 1 %}
+[[ {{ data.chapter.prev_short }}|{{ data.chapter.prev_long }} ]] | [[{{ data.chapter.next_short }}|{{ data.chapter.next_long }} →]]
+{% elseif data.chapter.current_chapter ==  data.book.max_chapter %}
+[[ {{ data.chapter.prev_short }}|← {{ data.chapter.prev_long }}]] | [[{{ data.book.long_name }}]]
+{% else %}
+[[ {{ data.chapter.prev_short }}|← {{ data.chapter.prev_long }}]] | [[{{ data.book.long_name }}]] | [[{{ data.chapter.next_short }}|{{ data.chapter.next_long }} →]]
+{% endif %}
+
+***
+# {{ data.book.long_name }}
+
+## {{ data.chapter.short_name }}
+
+{% for verse in data.verses.0 %}
+
+###### {{data.verses.prefix}}{{verse.verse}}
+{{ verse.text }}
+{% endfor %}
+
+***
+{% if data.chapter.current_chapter == 1 %}
+[[ {{ data.chapter.prev_short }}|{{ data.chapter.prev_long }} ]] | [[{{ data.chapter.next_short }}|{{ data.chapter.next_long }} →]]
+{% elseif data.chapter.current_chapter ==  data.book.max_chapter %}
+[[ {{ data.chapter.prev_short }}|← {{ data.chapter.prev_long }}]] | [[{{ data.book.long_name }}]]
+{% else %}
+[[ {{ data.chapter.prev_short }}|← {{ data.chapter.prev_long }}]] | [[{{ data.book.long_name }}]] | [[{{ data.chapter.next_short }}|{{ data.chapter.next_long }} →]]
+{% endif %}

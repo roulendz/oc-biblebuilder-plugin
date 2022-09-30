@@ -1,0 +1,34 @@
+---
+Aliases: [{{ data.book.long_name }} {{ data.chapter.current_chapter }}, {{ data.book.translation }} {{ data.book.short_name }} {{ data.chapter.current_chapter }}]
+Tags: [{{ data.book.long_name|replace({' ': '-'}) }}-{{ data.chapter.current_chapter }}, {{ data.book.short_name }}-{{ data.chapter.current_chapter }}]
+---
+[[{{ data.info.description|split(',')[0] }}]]
+# {{ data.book.long_name }} {{ data.chapter.current_chapter }}. {{ data.info.chapter_string }}
+
+{% if data.chapter.current_chapter == 1 %}
+[[ {{ data.chapter.prev_chapter }}|{{ data.chapter.prev_chapter_long }} ]] | [[{{ data.chapter.next_chapter }}|{{ data.chapter.next_chapter_long }} →]]
+{% elseif data.chapter.current_chapter ==  data.book.max_chapter %}
+[[ {{ data.chapter.prev_chapter }}|← {{ data.chapter.prev_chapter_long }}]] | [[{{ data.book.long_name }}]]
+{% else %}
+[[ {{ data.chapter.prev_chapter }}|← {{ data.chapter.prev_chapter_long }}]] | [[{{ data.book.long_name }}]] | [[{{ data.chapter.next_chapter }}|{{ data.chapter.next_chapter_long }} →]]
+{% endif %}
+
+***
+# {{ data.book.long_name }}
+
+## {{ data.chapter.current_chapter }}. {{ data.info.chapter_string}}
+
+{% for verse in data.verses %}
+
+###### v{{verse.verse}}
+{{ verse.text }}
+{% endfor %}
+
+***
+{% if data.chapter.current_chapter == 1 %}
+[[ {{ data.chapter.prev_chapter }}|{{ data.chapter.prev_chapter_long }} ]] | [[{{ data.chapter.next_chapter }}|{{ data.chapter.next_chapter_long }} →]]
+{% elseif data.chapter.current_chapter ==  data.book.max_chapter %}
+[[ {{ data.chapter.prev_chapter }}|← {{ data.chapter.prev_chapter_long }}]] | [[{{ data.book.long_name }}]]
+{% else %}
+[[ {{ data.chapter.prev_chapter }}|← {{ data.chapter.prev_chapter_long }}]] | [[{{ data.book.long_name }}]] | [[{{ data.chapter.next_chapter }}|{{ data.chapter.next_chapter_long }} →]]
+{% endif %}

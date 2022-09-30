@@ -1,0 +1,13 @@
+---
+Aliases: [{{ data.book.long_name }}, {{ data.book.translation }} {{ data.book.short_name }}, {{ data.book.short_name }}]
+Tags: [{{ data.book.short_name }}]
+---
+
+# [[{{ data.info.description|split(',')[0] }}]]
+***
+# {{ data.book.long_name }}
+{% for chapter in data.chapters %}
+[[{{ data.book.short_name }} {{chapter.chapter}}|{{ data.book.long_name }} {{chapter.chapter}}. {{  data.info.chapter_string }}]]
+{% endfor %}
+
+***

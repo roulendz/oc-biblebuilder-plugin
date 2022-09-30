@@ -1,0 +1,21 @@
+fields:
+    long_name:
+        label: Long name (Folder name)
+        span: row
+        spanClass: col-4
+        required: 1
+        type: text
+        placeholder: 'lovata.toolbox::lang.field.name'
+    short_name:
+        label: Short name (Chapter File name)
+        span: row
+        spanClass: col-4
+        type: text
+        placeholder: Short name
+    book_number:
+        label: 'lovata.toolbox::lang.field.external_id'
+        span: row
+        spanClass: col-4
+        type: number
+        readOnly: true
+

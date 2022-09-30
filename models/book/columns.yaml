@@ -1,0 +1,22 @@
+columns:
+    book_number:
+        label: 'lovata.toolbox::lang.field.id'
+        type: number
+        searchable: true
+        sortable: true
+        width: 100px
+    short_name:
+        label: 'lovata.toolbox::lang.field.name'
+        type: text
+        searchable: true
+        sortable: true
+    long_name:
+        label: 'Long name'
+        type: text
+        searchable: true
+        sortable: true
+    chapters:
+        label: 'Long name'
+        type: text
+        relation: chapters
+        relationCount: true

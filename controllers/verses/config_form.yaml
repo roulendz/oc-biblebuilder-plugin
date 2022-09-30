@@ -1,0 +1,29 @@
+# Record name
+name: 'logingrupa.biblebuilder::lang.verse.name'
+
+# Model Form Field configuration
+form: $/logingrupa/biblebuilder/models/verse/fields.yaml
+
+# Model Class name
+modelClass: Logingrupa\BibleBuilder\Models\Verse
+
+# Default redirect location
+defaultRedirect: logingrupa/biblebuilder/verses
+
+# Create page
+create:
+    title: 'backend::lang.form.create_title'
+    redirect: logingrupa/biblebuilder/verses/update/:id
+    redirectClose: logingrupa/biblebuilder/verses
+    flashSave: 'lovata.toolbox::lang.message.create_success'
+
+# Update page
+update:
+    title: 'backend::lang.form.update_title'
+    redirect: logingrupa/biblebuilder/verses
+    redirectClose: logingrupa/biblebuilder/verses
+    flashSave: 'lovata.toolbox::lang.message.update_success'
+    flashDelete: 'lovata.toolbox::lang.message.delete_success'
+
+# Preview page
+preview: {  }

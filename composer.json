@@ -1,0 +1,27 @@
+{
+    "name": "logingrupa/biblebuilder",
+    "description": "Build .md Markdown bible form .sqlite database",
+    "type": "october-plugin",
+    "require": {
+        "lovata/oc-toolbox-plugin": "dev-master",
+        "composer/installers": "~1.0"
+    },
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "roulendz",
+            "email": "rolands.zeltins@inbox.lv"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "classes/Helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
